@@ -21,9 +21,7 @@ require_once __DIR__ . '/../includes/header.php';
     <div style="max-width:var(--max-width-sm); margin:0 auto; display:grid; grid-template-columns:280px 1fr; gap:3rem;">
       <div>
         <?php foreach ($diferenciais as $slug => $dif): $isActive = ($slug === $currentSlug); ?>
-        <a href="<?= $slug ?>.php" style="display:flex; align-items:center; justify-content:space-between; padding:.9rem 1.2rem; margin-bottom:2px; border-radius:var(--radius-sm); font-family:var(--font-display); font-size:.88rem; font-weight:<?= $isActive ? '700' : '500' ?>; color:<?= $isActive ? 'var(--white)' : 'var(--text-secondary)' ?>; background:<?= $isActive ? 'var(--navy-800)' : 'transparent' ?>; text-decoration:none; transition:all .2s;"
-          onmouseover="if(!<?= $isActive ? 'true' : 'false' ?>){this.style.background='var(--bg-secondary)';this.style.color='var(--navy-700)';}"
-          onmouseout="if(!<?= $isActive ? 'true' : 'false' ?>){this.style.background='transparent';this.style.color='var(--text-secondary)';}">
+        <a href="<?= $slug ?>.php" class="sidebar-item<?= $isActive ? ' active' : '' ?>">
           <?= $dif['title'] ?>
           <svg width="7" height="12" viewBox="0 0 7 12" fill="none" style="opacity:<?= $isActive ? '1' : '.3' ?>;"><path d="M1 1L6 6L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>

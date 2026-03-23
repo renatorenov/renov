@@ -118,6 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
             errorEl.style.display = 'block';
           }
           field.el.style.borderColor = '#ff6b6b';
+          field.el.dataset.hasError = 'true';
           hasError = true;
         }
       }
@@ -131,6 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
           errorEl.style.display = 'block';
         }
         emailEl.style.borderColor = '#ff6b6b';
+        emailEl.dataset.hasError = 'true';
         hasError = true;
       }
 
@@ -169,8 +171,8 @@ document.addEventListener('DOMContentLoaded', () => {
               body: JSON.stringify(jsonData)
             });
             if (n8nResponse.ok) success = true;
-          } catch (e) {
-            console.log('n8n webhook falhou, tentando PHP...');
+          } catch (_) {
+            // webhook indisponível, tenta PHP
           }
         }
 
@@ -183,8 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             const result = await phpResponse.json();
             if (result.success) success = true;
-          } catch (e) {
-            console.log('PHP backend falhou.');
+          } catch (_) {
+            // PHP backend indisponível
           }
         }
 
@@ -207,11 +209,12 @@ document.addEventListener('DOMContentLoaded', () => {
     contactForm.querySelectorAll('.contact-input, .contact-select, .contact-textarea').forEach(input => {
       input.addEventListener('focus', () => {
         input.style.borderColor = 'rgba(0,229,200,.4)';
+        input.dataset.hasError = '';
         const errorEl = input.parentElement.querySelector('.form-error');
         if (errorEl) errorEl.style.display = 'none';
       });
       input.addEventListener('blur', () => {
-        if (!input.style.borderColor.includes('ff6b6b')) {
+        if (!input.dataset.hasError) {
           input.style.borderColor = 'rgba(255,255,255,.1)';
         }
       });

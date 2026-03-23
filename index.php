@@ -49,9 +49,7 @@
       </div>
       <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:1.2rem;">
         <?php foreach ($solucoes as $slug => $sol): ?>
-        <a href="solucoes/<?= $slug ?>.php" style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-xl); padding:1.8rem; text-decoration:none; transition:all .3s; display:block; box-shadow:var(--shadow-sm);"
-          onmouseover="this.style.borderColor='var(--cyan-500)'; this.style.transform='translateY(-4px)'; this.style.boxShadow='var(--shadow-lg)';"
-          onmouseout="this.style.borderColor='var(--gray-200)'; this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)';">
+        <a href="solucoes/<?= $slug ?>.php" class="card-hover">
           <div style="width:40px; height:40px; color:var(--navy-700); margin-bottom:1rem;"><?= $icons[$sol['icon']] ?></div>
           <h3 style="font-family:var(--font-display); font-size:.95rem; font-weight:700; color:var(--text-primary); margin-bottom:.4rem;"><?= $sol['title'] ?></h3>
           <span style="color:var(--cyan-500); font-weight:600; font-size:.8rem;">leia mais</span>
@@ -70,9 +68,7 @@
       </div>
       <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:1.2rem;">
         <?php foreach ($diferenciais as $slug => $dif): ?>
-        <a href="diferenciais/<?= $slug ?>.php" style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-xl); padding:2rem; text-decoration:none; transition:all .3s; display:block; box-shadow:var(--shadow-sm);"
-          onmouseover="this.style.borderColor='var(--cyan-500)'; this.style.transform='translateY(-4px)'; this.style.boxShadow='var(--shadow-lg)';"
-          onmouseout="this.style.borderColor='var(--gray-200)'; this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)';">
+        <a href="diferenciais/<?= $slug ?>.php" class="card-hover-lg">
           <div style="width:44px; height:44px; color:var(--navy-700); margin-bottom:1rem;"><?= $icons[$dif['icon']] ?></div>
           <h3 style="font-family:var(--font-display); font-size:1rem; font-weight:700; color:var(--text-primary); margin-bottom:.3rem;"><?= $dif['title'] ?></h3>
           <p style="color:var(--text-secondary); font-size:.84rem; line-height:1.5; margin-bottom:.6rem;"><?= $dif['subtitle'] ?></p>
@@ -168,22 +164,22 @@
         <form id="contact-form" method="POST" action="api/contato.php">
           <input type="text" name="website" style="display:none;" tabindex="-1" autocomplete="off">
           <div class="contact-row">
-            <div><input type="email" name="email" class="contact-input" placeholder="Email Corporativo" required><div class="form-error"></div></div>
-            <div><input type="text" name="nome" class="contact-input" placeholder="Nome" required><div class="form-error"></div></div>
+            <div><input type="email" name="email" class="contact-input" placeholder="Email Corporativo" required maxlength="254" aria-label="Email Corporativo" autocomplete="email"><div class="form-error" role="alert"></div></div>
+            <div><input type="text" name="nome" class="contact-input" placeholder="Nome" required maxlength="120" aria-label="Nome completo" autocomplete="name"><div class="form-error" role="alert"></div></div>
           </div>
           <div class="contact-row">
-            <div><input type="tel" name="celular" class="contact-input" placeholder="Celular" required><div class="form-error"></div></div>
-            <div><input type="text" name="cidade" class="contact-input" placeholder="Cidade"><div class="form-error"></div></div>
+            <div><input type="tel" name="celular" class="contact-input" placeholder="Celular" required maxlength="20" aria-label="Celular com DDD" autocomplete="tel"><div class="form-error" role="alert"></div></div>
+            <div><input type="text" name="cidade" class="contact-input" placeholder="Cidade" maxlength="100" aria-label="Cidade" autocomplete="address-level2"><div class="form-error" role="alert"></div></div>
           </div>
           <div class="contact-row">
-            <div><input type="text" name="empresa" class="contact-input" placeholder="Empresa" required><div class="form-error"></div></div>
-            <div><select name="num_funcionarios" class="contact-select"><option value="" disabled selected>Número de funcionários</option><option value="1-50">1 a 50</option><option value="51-200">51 a 200</option><option value="201-500">201 a 500</option><option value="501-1000">501 a 1.000</option><option value="1001+">Mais de 1.000</option></select></div>
+            <div><input type="text" name="empresa" class="contact-input" placeholder="Empresa" required maxlength="150" aria-label="Nome da empresa" autocomplete="organization"><div class="form-error" role="alert"></div></div>
+            <div><select name="num_funcionarios" class="contact-select" aria-label="Número de funcionários"><option value="" disabled selected>Número de funcionários</option><option value="1-50">1 a 50</option><option value="51-200">51 a 200</option><option value="201-500">201 a 500</option><option value="501-1000">501 a 1.000</option><option value="1001+">Mais de 1.000</option></select></div>
           </div>
           <div class="contact-row">
-            <div><input type="text" name="segmento" class="contact-input" placeholder="Segmento / Mercado"></div>
-            <div><select name="cargo" class="contact-select"><option value="" disabled selected>Cargo</option><option value="ceo">CEO / Diretor</option><option value="cfo">CFO / Diretor Financeiro</option><option value="gerente">Gerente</option><option value="coordenador">Coordenador</option><option value="rh">RH / DP</option><option value="outro">Outro</option></select></div>
+            <div><input type="text" name="segmento" class="contact-input" placeholder="Segmento / Mercado" maxlength="100" aria-label="Segmento de mercado"></div>
+            <div><select name="cargo" class="contact-select" aria-label="Cargo"><option value="" disabled selected>Cargo</option><option value="ceo">CEO / Diretor</option><option value="cfo">CFO / Diretor Financeiro</option><option value="gerente">Gerente</option><option value="coordenador">Coordenador</option><option value="rh">RH / DP</option><option value="outro">Outro</option></select></div>
           </div>
-          <textarea name="mensagem" class="contact-textarea" placeholder="Descreva brevemente a operação do seu DP (sistema atual, número de empresas, principais dores)" rows="4"></textarea>
+          <textarea name="mensagem" class="contact-textarea" placeholder="Descreva brevemente a operação do seu DP (sistema atual, número de empresas, principais dores)" rows="4" maxlength="2000" aria-label="Mensagem"></textarea>
           <div class="contact-checkbox-row">
             <input type="checkbox" name="agendar" id="agendar" class="contact-checkbox">
             <label for="agendar" class="contact-checkbox-label">Desejo agendar uma reunião de diagnóstico</label>

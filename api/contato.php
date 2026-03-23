@@ -11,8 +11,19 @@ define('LEADS_FILE', __DIR__ . '/../data/leads.csv');
 define('LOG_FILE', __DIR__ . '/../data/contato.log');
 
 // ─── CORS & HEADERS ───
+$allowedOrigins = [
+    'https://renovdp.com.br',
+    'https://www.renovdp.com.br',
+    'http://localhost',
+    'http://localhost:80',
+];
+$origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+if (in_array($origin, $allowedOrigins, true)) {
+    header('Access-Control-Allow-Origin: ' . $origin);
+} else {
+    header('Access-Control-Allow-Origin: https://renovdp.com.br');
+}
 header('Content-Type: application/json; charset=utf-8');
-header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST');
 header('Access-Control-Allow-Headers: Content-Type');
 
@@ -132,11 +143,14 @@ function enviarEmailNotificacao(array $dados): bool {
     </body>
     </html>";
 
+    // Strip newlines to prevent email header injection
+    $safeEmail = str_replace(["\r", "\n"], '', $dados['email']);
+
     $headers = [
         'MIME-Version: 1.0',
         'Content-type: text/html; charset=UTF-8',
         'From: ' . SITE_NAME . ' <noreply@renovdp.com.br>',
-        'Reply-To: ' . $dados['email'],
+        'Reply-To: ' . $safeEmail,
     ];
 
     return mail(ADMIN_EMAIL, $assunto, $corpo, implode("\r\n", $headers));
@@ -152,7 +166,10 @@ function registrarLog(string $mensagem): void {
     }
     $timestamp = date('Y-m-d H:i:s');
     $ip = $_SERVER['REMOTE_ADDR'] ?? 'N/A';
-    file_put_contents(LOG_FILE, "[{$timestamp}] [{$ip}] {$mensagem}\n", FILE_APPEND);
+    $result = file_put_contents(LOG_FILE, "[{$timestamp}] [{$ip}] {$mensagem}\n", FILE_APPEND | LOCK_EX);
+    if ($result === false) {
+        error_log("Renov: falha ao escrever log em " . LOG_FILE);
+    }
 }
 
 // ─── PROCESSAMENTO DO FORMULÁRIO ───
@@ -187,6 +204,24 @@ $dados = [
     'mensagem'          => sanitize($_POST['mensagem'] ?? ''),
     'agendar'           => isset($_POST['agendar']) && $_POST['agendar'] === 'on',
 ];
+
+// ─── LIMITES DE COMPRIMENTO ───
+$limites = [
+    'nome'     => 120,
+    'email'    => 254,
+    'celular'  => 20,
+    'cidade'   => 100,
+    'empresa'  => 150,
+    'segmento' => 100,
+    'cargo'    => 60,
+    'mensagem' => 2000,
+];
+
+foreach ($limites as $campo => $max) {
+    if (isset($dados[$campo]) && mb_strlen($dados[$campo], 'UTF-8') > $max) {
+        $dados[$campo] = mb_substr($dados[$campo], 0, $max, 'UTF-8');
+    }
+}
 
 // Validações
 $erros = [];
