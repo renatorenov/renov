@@ -31,3 +31,8 @@
 .sidebar-item:hover{background:var(--bg-secondary);color:var(--navy-700);}
 .sidebar-item.active{font-weight:700;color:var(--white);background:var(--navy-800);}
 .sidebar-item.active:hover{background:var(--navy-800);color:var(--white);}
+/* ── Nav mega-dropdown 2 colunas ── */
+.nav-dropdown-menu--cols2{min-width:500px;padding:.6rem}
+.nav-dropdown.open .nav-dropdown-menu--cols2{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.nav-dropdown-menu--cols2 .nav-dropdown-item{border-radius:var(--radius-sm);border-left:2px solid transparent;padding:.6rem .85rem;white-space:normal;line-height:1.35}
+.nav-dropdown-menu--cols2 .nav-dropdown-item:hover{background:var(--bg-secondary);color:var(--navy-700);border-left-color:var(--cyan-500)}
