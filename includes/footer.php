@@ -12,10 +12,9 @@
       </div>
       <div class="footer-col">
         <h4>Empresa</h4>
-        <a href="<?= $rootPath ?>/#sobre">Sobre Nós</a>
+        <a href="<?= $rootPath ?>/#sobre">Quem Somos</a>
         <a href="<?= $rootPath ?>/#missao">Nossa Missão</a>
         <a href="<?= $rootPath ?>/#transicao">Transição Risco Zero</a>
-        <a href="<?= $rootPath ?>/#blog">Blog</a>
         <a href="<?= $rootPath ?>/#parceiros">Seja Parceiro</a>
       </div>
       <div class="footer-col">

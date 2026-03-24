@@ -199,15 +199,5 @@
     <a href="#contato" class="btn-outline" style="text-decoration:none;">Quero ser parceiro →</a>
   </div></section>
 
-  <!-- ══════ BLOG ══════ -->
-  <section class="blog" id="blog"><div class="blog-inner reveal">
-    <div class="section-label">Inteligência para o DP</div>
-    <h2 class="section-title">Conteúdo que impacta a gestão do seu Departamento Pessoal</h2>
-    <div class="blog-grid">
-      <div class="blog-card"><div class="blog-card-image"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 36l10-14 8 6 12-16 10 8"/><path d="M30 12h10v10"/><line x1="4" y1="44" x2="44" y2="44"/></svg></div><div class="blog-card-body"><div class="blog-card-date">Março 2026</div><h3>TCO do Departamento Pessoal: como calcular o custo real da sua operação interna</h3><span class="blog-card-link">Leia mais →</span></div></div>
-      <div class="blog-card"><div class="blog-card-image"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4L8 12v16c0 11 7 18 16 20 9-2 16-9 16-20V12L24 4z"/><path d="M16 24l6 6 10-12"/></svg></div><div class="blog-card-body"><div class="blog-card-date">Fevereiro 2026</div><h3>eSocial 2026: impactos financeiros das novas regras e como se proteger</h3><span class="blog-card-link">Leia mais →</span></div></div>
-      <div class="blog-card"><div class="blog-card-image"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="7"/><path d="M24 4v6M24 38v6M4 24h6M38 24h6M8.7 8.7l4.2 4.2M35.1 35.1l4.2 4.2M8.7 39.3l4.2-4.2M35.1 12.9l4.2-4.2"/></svg></div><div class="blog-card-body"><div class="blog-card-date">Janeiro 2026</div><h3>Parametrização do LG Lugar de Gen.te: erros comuns que custam caro na folha</h3><span class="blog-card-link">Leia mais →</span></div></div>
-    </div>
-  </div></section>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
