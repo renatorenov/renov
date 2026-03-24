@@ -25,8 +25,8 @@
             <div class="hero-stat"><div class="hero-stat-number">0</div><div class="hero-stat-label">Multas por atraso</div></div>
           </div>
         </div>
-        <div class="floating-badge floating-badge-1">✅ DIRF Mensal auditada</div>
-        <div class="floating-badge floating-badge-2">🔒 Compliance total</div>
+        <div class="floating-badge floating-badge-1"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:4px;"><path d="M1.5 6.5l3 3 6-6"/></svg>DIRF Mensal auditada</div>
+        <div class="floating-badge floating-badge-2"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:4px;"><path d="M6 1L11 3.5v3.5c0 2.5-2 4-5 5-3-1-5-2.5-5-5V3.5L6 1z"/></svg>Compliance total</div>
       </div>
     </div>
   </section>
@@ -125,10 +125,10 @@
       <p>Não estamos aqui para impressionar com números bonitos. Estamos aqui porque conhecemos, de dentro, os problemas que impactam diretamente o resultado financeiro de quem gerencia Departamento Pessoal.</p>
     </div>
     <div class="why-grid">
-      <div class="why-card"><span class="why-card-emoji">😰</span><h3>O analista pediu demissão. E agora?</h3><p>Quando todo o conhecimento da folha está na cabeça de uma pessoa, a saída dela vira uma crise operacional e financeira. Com a Renov, o conhecimento fica na operação. Sua folha nunca para.</p></div>
-      <div class="why-card"><span class="why-card-emoji">⏳</span><h3>Seu DP vive apagando incêndio</h3><p>Se sua equipe passa o mês resolvendo pendências operacionais, ela não está fazendo gestão financeira do DP. Nós assumimos o operacional para que sua gestão tenha controle real dos números.</p></div>
-      <div class="why-card"><span class="why-card-emoji">💸</span><h3>O custo invisível de fazer tudo internamente</h3><p>Salários, encargos, software, treinamento, férias e substituições. Quando o CFO soma o TCO real do DP interno, o número é muito maior do que parece.</p></div>
-      <div class="why-card"><span class="why-card-emoji">⚠️</span><h3>Uma multa pode custar mais que um ano inteiro</h3><p>Um prazo perdido no eSocial, uma DIRF com erro, uma rescisão mal calculada. Qualquer deslize gera multas pesadas e passivos trabalhistas que impactam diretamente o balanço.</p></div>
+      <div class="why-card"><span class="why-card-emoji"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="10" r="6"/><path d="M4 32c0-7 4-11 10-11"/><path d="M26 18l7 7-7 7M33 25H22"/></svg></span><h3>O analista pediu demissão. E agora?</h3><p>Quando todo o conhecimento da folha está na cabeça de uma pessoa, a saída dela vira uma crise operacional e financeira. Com a Renov, o conhecimento fica na operação. Sua folha nunca para.</p></div>
+      <div class="why-card"><span class="why-card-emoji"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="19" r="13"/><path d="M18 11v8l5 3"/><path d="M14 2h8"/></svg></span><h3>Seu DP vive apagando incêndio</h3><p>Se sua equipe passa o mês resolvendo pendências operacionais, ela não está fazendo gestão financeira do DP. Nós assumimos o operacional para que sua gestão tenha controle real dos números.</p></div>
+      <div class="why-card"><span class="why-card-emoji"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="28" height="28" rx="3"/><rect x="9" y="9" width="18" height="7" rx="1"/><path d="M9 22h4M9 28h4M17 22h4M17 28h4M25 22h2v8h-2"/></svg></span><h3>O custo invisível de fazer tudo internamente</h3><p>Salários, encargos, software, treinamento, férias e substituições. Quando o CFO soma o TCO real do DP interno, o número é muito maior do que parece.</p></div>
+      <div class="why-card"><span class="why-card-emoji"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3L3 31h30L18 3z"/><path d="M18 14v8M18 26v2"/></svg></span><h3>Uma multa pode custar mais que um ano inteiro</h3><p>Um prazo perdido no eSocial, uma DIRF com erro, uma rescisão mal calculada. Qualquer deslize gera multas pesadas e passivos trabalhistas que impactam diretamente o balanço.</p></div>
     </div>
     <div class="why-cta-box">
       <h3>E se você pudesse resolver tudo isso<br>com uma única decisão?</h3>
@@ -141,12 +141,12 @@
   <section class="imagine"><div class="imagine-inner reveal">
     <div class="imagine-header"><div class="section-label">O que muda quando a Renov entra</div><h2 class="section-title">Eficiência financeira aplicada ao seu DP</h2></div>
     <div class="imagine-grid">
-      <div class="imagine-card"><span class="imagine-card-icon">🎯</span><h3>Zero retrabalho</h3><p>Cada cálculo é conferido duas vezes. Erros que geram passivos simplesmente deixam de existir.</p></div>
-      <div class="imagine-card"><span class="imagine-card-icon">🕐</span><h3>Prazos sempre cumpridos</h3><p>eSocial, DIRF, CAGED, DCTFWeb. Tudo entregue antes do prazo. Zero multas, zero surpresas no balanço.</p></div>
-      <div class="imagine-card"><span class="imagine-card-icon">📊</span><h3>Visibilidade financeira total</h3><p>Custo de folha, provisões, encargos e impacto de cada decisão visíveis em tempo real para a diretoria.</p></div>
-      <div class="imagine-card"><span class="imagine-card-icon">🔐</span><h3>Segurança jurídica e financeira</h3><p>Legislação trabalhista muda o tempo todo. A Renov garante compliance contínuo para proteger o resultado.</p></div>
-      <div class="imagine-card"><span class="imagine-card-icon">📞</span><h3>SLA contratual de atendimento</h3><p>Equipe dedicada com SLA em contrato. Problemas resolvidos antes de impactar a operação.</p></div>
-      <div class="imagine-card"><span class="imagine-card-icon">📈</span><h3>Redução comprovada de TCO</h3><p>Redução média de 30% no Custo Total de Propriedade do DP. Resultado direto no balanço.</p></div>
+      <div class="imagine-card"><span class="imagine-card-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="15"/><circle cx="18" cy="18" r="8"/><circle cx="18" cy="18" r="2" fill="currentColor"/></svg></span><h3>Zero retrabalho</h3><p>Cada cálculo é conferido duas vezes. Erros que geram passivos simplesmente deixam de existir.</p></div>
+      <div class="imagine-card"><span class="imagine-card-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="28" height="26" rx="3"/><path d="M4 16h28M12 4v6M24 4v6"/><path d="M12 24l4 4 8-8"/></svg></span><h3>Prazos sempre cumpridos</h3><p>eSocial, DIRF, CAGED, DCTFWeb. Tudo entregue antes do prazo. Zero multas, zero surpresas no balanço.</p></div>
+      <div class="imagine-card"><span class="imagine-card-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="32" height="22" rx="3"/><path d="M2 12h32M12 30h12M18 26v4"/><path d="M10 19v4M15 16v7M20 20v3M25 17v6"/></svg></span><h3>Visibilidade financeira total</h3><p>Custo de folha, provisões, encargos e impacto de cada decisão visíveis em tempo real para a diretoria.</p></div>
+      <div class="imagine-card"><span class="imagine-card-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2L4 8v10c0 9 6 15 14 18 8-3 14-9 14-18V8L18 2z"/><path d="M12 18l4 4 8-8"/></svg></span><h3>Segurança jurídica e financeira</h3><p>Legislação trabalhista muda o tempo todo. A Renov garante compliance contínuo para proteger o resultado.</p></div>
+      <div class="imagine-card"><span class="imagine-card-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 23V16a10 10 0 0120 0v7"/><rect x="4" y="21" width="7" height="9" rx="2"/><rect x="25" y="21" width="7" height="9" rx="2"/><path d="M32 30c0 3-3 5-7 5h-3"/></svg></span><h3>SLA contratual de atendimento</h3><p>Equipe dedicada com SLA em contrato. Problemas resolvidos antes de impactar a operação.</p></div>
+      <div class="imagine-card"><span class="imagine-card-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 26l8-10 6 4 14-14"/><path d="M24 6h8v8"/><line x1="4" y1="32" x2="32" y2="32"/></svg></span><h3>Redução comprovada de TCO</h3><p>Redução média de 30% no Custo Total de Propriedade do DP. Resultado direto no balanço.</p></div>
     </div>
   </div></section>
 
@@ -186,7 +186,7 @@
           </div>
           <button type="submit" class="contact-submit">Solicitar Diagnóstico Gratuito</button>
         </form>
-        <div class="form-success" id="form-success">✅ Solicitação recebida com sucesso!<br><span style="font-weight:400;font-size:.9rem;color:var(--text-on-dark-secondary);">Um dos nossos especialistas entrará em contato em até 24 horas.</span></div>
+        <div class="form-success" id="form-success">Solicitação recebida com sucesso.<br><span style="font-weight:400;font-size:.9rem;color:var(--text-on-dark-secondary);">Um dos nossos especialistas entrará em contato em até 24 horas.</span></div>
       </div>
     </div>
   </section>
@@ -204,9 +204,9 @@
     <div class="section-label">Inteligência para o DP</div>
     <h2 class="section-title">Conteúdo que impacta a gestão do seu Departamento Pessoal</h2>
     <div class="blog-grid">
-      <div class="blog-card"><div class="blog-card-image">💹</div><div class="blog-card-body"><div class="blog-card-date">Março 2026</div><h3>TCO do Departamento Pessoal: como calcular o custo real da sua operação interna</h3><span class="blog-card-link">Leia mais →</span></div></div>
-      <div class="blog-card"><div class="blog-card-image">⚖️</div><div class="blog-card-body"><div class="blog-card-date">Fevereiro 2026</div><h3>eSocial 2026: impactos financeiros das novas regras e como se proteger</h3><span class="blog-card-link">Leia mais →</span></div></div>
-      <div class="blog-card"><div class="blog-card-image">🔧</div><div class="blog-card-body"><div class="blog-card-date">Janeiro 2026</div><h3>Parametrização do LG Lugar de Gen.te: erros comuns que custam caro na folha</h3><span class="blog-card-link">Leia mais →</span></div></div>
+      <div class="blog-card"><div class="blog-card-image"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 36l10-14 8 6 12-16 10 8"/><path d="M30 12h10v10"/><line x1="4" y1="44" x2="44" y2="44"/></svg></div><div class="blog-card-body"><div class="blog-card-date">Março 2026</div><h3>TCO do Departamento Pessoal: como calcular o custo real da sua operação interna</h3><span class="blog-card-link">Leia mais →</span></div></div>
+      <div class="blog-card"><div class="blog-card-image"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4L8 12v16c0 11 7 18 16 20 9-2 16-9 16-20V12L24 4z"/><path d="M16 24l6 6 10-12"/></svg></div><div class="blog-card-body"><div class="blog-card-date">Fevereiro 2026</div><h3>eSocial 2026: impactos financeiros das novas regras e como se proteger</h3><span class="blog-card-link">Leia mais →</span></div></div>
+      <div class="blog-card"><div class="blog-card-image"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="7"/><path d="M24 4v6M24 38v6M4 24h6M38 24h6M8.7 8.7l4.2 4.2M35.1 35.1l4.2 4.2M8.7 39.3l4.2-4.2M35.1 12.9l4.2-4.2"/></svg></div><div class="blog-card-body"><div class="blog-card-date">Janeiro 2026</div><h3>Parametrização do LG Lugar de Gen.te: erros comuns que custam caro na folha</h3><span class="blog-card-link">Leia mais →</span></div></div>
     </div>
   </div></section>
 
