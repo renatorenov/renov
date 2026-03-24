@@ -41,8 +41,8 @@ $rootPath = $isHome ? '.' : '..';
             <?php endforeach; ?>
           </div>
         </div>
+        <a class="nav-link" href="<?= $rootPath ?>/#sobre">Quem Somos</a>
         <a class="nav-link" href="<?= $rootPath ?>/#porque">Por que a Renov?</a>
-        <a class="nav-link" href="<?= $rootPath ?>/#blog">Blog</a>
         <a class="nav-link" href="<?= $rootPath ?>/#contato">Contato</a>
         <a class="nav-cta" href="<?= $rootPath ?>/#contato">Solicitar Proposta</a>
       </div>
