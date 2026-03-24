@@ -27,7 +27,7 @@ $rootPath = $isHome ? '.' : '..';
       <div class="nav-menu">
         <div class="nav-dropdown">
           <span class="nav-dropdown-toggle">Soluções <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu nav-dropdown-menu--cols2">
             <?php foreach ($solucoes as $slug => $sol): ?>
             <a class="nav-dropdown-item" href="<?= $rootPath ?>/solucoes/<?= $slug ?>.php"><?= $sol['title'] ?></a>
             <?php endforeach; ?>
@@ -35,7 +35,7 @@ $rootPath = $isHome ? '.' : '..';
         </div>
         <div class="nav-dropdown">
           <span class="nav-dropdown-toggle">Diferenciais <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu nav-dropdown-menu--cols2">
             <?php foreach ($diferenciais as $slug => $dif): ?>
             <a class="nav-dropdown-item" href="<?= $rootPath ?>/diferenciais/<?= $slug ?>.php"><?= $dif['title'] ?></a>
             <?php endforeach; ?>
