@@ -129,7 +129,7 @@ function enviarEmailNotificacao(array $dados): bool {
                     <tr><td style='padding: 8px 0; font-weight: bold;'>Funcionários:</td><td>{$dados['num_funcionarios']}</td></tr>
                     <tr><td style='padding: 8px 0; font-weight: bold;'>Segmento:</td><td>{$dados['segmento']}</td></tr>
                     <tr><td style='padding: 8px 0; font-weight: bold;'>Cargo:</td><td>{$dados['cargo']}</td></tr>
-                    <tr><td style='padding: 8px 0; font-weight: bold;'>Agendar consultor:</td><td>" . ($dados['agendar'] ? '✅ Sim' : '❌ Não') . "</td></tr>
+                    <tr><td style='padding: 8px 0; font-weight: bold;'>Agendar consultor:</td><td>" . ($dados['agendar'] ? 'Sim' : 'Não') . "</td></tr>
                 </table>
                 <div style='margin-top: 15px; padding: 15px; background: #fff; border-radius: 8px; border-left: 4px solid #00e5c8;'>
                     <strong>Mensagem:</strong><br>
