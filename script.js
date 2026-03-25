@@ -153,48 +153,18 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.textContent = 'Enviando...';
         submitBtn.disabled = true;
 
-        // ═══ CONFIGURAÇÃO: Escolha seu método de envio ═══
-        // Opção 1: Webhook do n8n (recomendado)
-        const N8N_WEBHOOK_URL = 'https://atendedp-n8n.y1xezl.easypanel.host/webhook-test/renovsite';
-        
-        // Opção 2: PHP backend local
-        const PHP_ENDPOINT = 'api/contato.php';
+        // PHP recebe o lead e encaminha para n8n via cURL (sem CORS)
+        const phpResponse = await fetch('api/contato.php', {
+          method: 'POST',
+          body: formData
+        });
+        const result = await phpResponse.json();
 
-        let success = false;
-
-        // Tenta enviar via n8n webhook primeiro
-        if (N8N_WEBHOOK_URL !== 'SUA_URL_WEBHOOK_N8N_AQUI') {
-          try {
-            const n8nResponse = await fetch(N8N_WEBHOOK_URL, {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(jsonData)
-            });
-            if (n8nResponse.ok) success = true;
-          } catch (_) {
-            // webhook indisponível, tenta PHP
-          }
-        }
-
-        // Se n8n não funcionou, tenta PHP
-        if (!success) {
-          try {
-            const phpResponse = await fetch(PHP_ENDPOINT, {
-              method: 'POST',
-              body: formData
-            });
-            const result = await phpResponse.json();
-            if (result.success) success = true;
-          } catch (_) {
-            // PHP backend indisponível
-          }
-        }
-
-        if (success) {
+        if (result.success) {
           contactForm.style.display = 'none';
           document.getElementById('form-success').classList.add('show');
         } else {
-          alert('Erro ao enviar. Tente novamente ou entre em contato pelo WhatsApp.');
+          alert(result.message || 'Erro ao enviar. Tente novamente ou entre em contato pelo WhatsApp.');
           submitBtn.textContent = originalText;
           submitBtn.disabled = false;
         }
