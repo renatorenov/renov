@@ -9,6 +9,7 @@ define('ADMIN_EMAIL', 'contato@renovdp.com.br');
 define('SITE_NAME', 'Renov Departamento Pessoal');
 define('LEADS_FILE', __DIR__ . '/../data/leads.csv');
 define('LOG_FILE', __DIR__ . '/../data/contato.log');
+define('N8N_WEBHOOK_URL', 'https://atendedp-n8n.y1xezl.easypanel.host/webhook/renovsite');
 
 // ─── CORS & HEADERS ───
 $allowedOrigins = [
@@ -157,6 +158,37 @@ function enviarEmailNotificacao(array $dados): bool {
 }
 
 /**
+ * Envia lead para o webhook n8n via cURL (servidor→servidor, sem CORS)
+ */
+function notificarN8n(array $dados): bool {
+    if (!function_exists('curl_init')) {
+        return false;
+    }
+
+    $payload = json_encode(array_merge($dados, [
+        'agendar'     => $dados['agendar'] ? 'Sim' : 'Não',
+        'data_envio'  => date('d/m/Y H:i:s'),
+        'ip'          => $_SERVER['REMOTE_ADDR'] ?? 'N/A',
+    ]));
+
+    $ch = curl_init(N8N_WEBHOOK_URL);
+    curl_setopt_array($ch, [
+        CURLOPT_POST           => true,
+        CURLOPT_POSTFIELDS     => $payload,
+        CURLOPT_HTTPHEADER     => ['Content-Type: application/json'],
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_TIMEOUT        => 5,
+        CURLOPT_SSL_VERIFYPEER => true,
+    ]);
+
+    $response = curl_exec($ch);
+    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    return $response !== false && $httpCode >= 200 && $httpCode < 300;
+}
+
+/**
  * Registra log de atividade
  */
 function registrarLog(string $mensagem): void {
@@ -252,9 +284,10 @@ if (!empty($erros)) {
 // Salvar lead
 $csvSalvo = salvarLeadCSV($dados);
 $emailEnviado = enviarEmailNotificacao($dados);
+$n8nNotificado = notificarN8n($dados);
 
 // Log
-registrarLog("Lead recebido: {$dados['nome']} ({$dados['empresa']}) - CSV: " . ($csvSalvo ? 'OK' : 'FALHA') . " - Email: " . ($emailEnviado ? 'OK' : 'FALHA'));
+registrarLog("Lead recebido: {$dados['nome']} ({$dados['empresa']}) - CSV: " . ($csvSalvo ? 'OK' : 'FALHA') . " - Email: " . ($emailEnviado ? 'OK' : 'FALHA') . " - N8N: " . ($n8nNotificado ? 'OK' : 'FALHA'));
 
 // Resposta
 echo json_encode([
