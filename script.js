@@ -153,11 +153,10 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.textContent = 'Enviando...';
         submitBtn.disabled = true;
 
-        // ═══ CONFIGURAÇÃO: Escolha seu método de envio ═══
-        // Opção 1: Webhook do n8n (recomendado)
-        const N8N_WEBHOOK_URL = 'SUA_URL_WEBHOOK_N8N_AQUI';
-        
-        // Opção 2: PHP backend local
+        // ═══ CONFIGURAÇÃO: Webhook n8n (primário) + PHP (fallback) ═══
+        const N8N_WEBHOOK_URL = 'https://atendedp-n8n.y1xezl.easypanel.host/webhook/renovsite';
+
+        // PHP backend local (fallback)
         const PHP_ENDPOINT = 'api/contato.php';
 
         let success = false;
