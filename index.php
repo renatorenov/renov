@@ -82,7 +82,7 @@
   <!-- ══════ SOBRE NÓS ══════ -->
   <section class="about" id="sobre">
     <div class="about-grid reveal">
-      <div><div class="about-card"><img src="assets/logo.svg" alt="Renov"><div class="about-card-label">Engenharia Financeira de Departamento Pessoal</div></div></div>
+      <img src="assets/porque-renov.jpg" alt="Especialista em Engenharia Financeira de DP" class="about-img">
       <div class="about-text">
         <div class="section-label">Por que a Renov?</div>
         <h2 class="section-title" style="margin-bottom:1.2rem;">Você foca na Estratégia do Negócio,<br>nós garantimos o Compliance e a Eficiência Financeira do DP</h2>
