@@ -18,7 +18,7 @@ $rootPath = $isHome ? '.' : '..';
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="<?= $rootPath ?>/style.css">
-  <link rel="icon" href="<?= $rootPath ?>/assets/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="<?= $rootPath ?>/assets/FENIX FUNDO BRANCO.svg" type="image/svg+xml">
 </head>
 <body>
   <nav class="nav" id="main-nav">
