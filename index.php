@@ -1,4 +1,4 @@
-<?php require_once __DIR__ . '/includes/data.php'; $pageTitle = 'Renov — Engenharia Financeira de Departamento Pessoal'; $rootPath = '.'; require_once __DIR__ . '/includes/header.php'; ?>
+<?php require_once __DIR__ . '/includes/data.php'; $pageTitle = 'Renov — Boutique de Engenharia Financeira de Folha'; $rootPath = '.'; require_once __DIR__ . '/includes/header.php'; ?>
 
   <!-- ══════ HERO ══════ -->
   <section class="hero">
@@ -7,7 +7,7 @@
       <div>
         <div class="hero-badge fade-1"><span class="hero-badge-dot"></span>Engenharia Financeira de Folha há +15 anos</div>
         <h1 class="section-title-lg fade-2"><span class="gradient-text">Engenharia Financeira</span><br>do seu Departamento Pessoal.</h1>
-        <p class="hero-desc fade-3">Somos especialistas em Engenharia Financeira de Departamento Pessoal para empresas de médio e grande porte, clientes ativos e futuros clientes LG Lugar de Gen.te. Você foca na Estratégia do Negócio, nós garantimos o Compliance e a Eficiência Financeira do DP.</p>
+        <p class="hero-desc fade-3">Somos especialistas em Boutique de Engenharia Financeira de Folha para empresas de médio e grande porte, clientes ativos e futuros clientes LG Lugar de Gen.te. Você foca na Estratégia do Negócio, nós garantimos o Compliance e a Eficiência Financeira do DP.</p>
         <div class="hero-actions fade-4">
           <a href="#contato" class="btn-primary">Solicitar Proposta →</a>
           <a href="#solucoes-grid" class="btn-secondary">Nossas Soluções</a>
