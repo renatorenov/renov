@@ -6,7 +6,7 @@
 
 // ─── CONFIGURAÇÃO ───
 define('ADMIN_EMAIL', 'contato@renovdp.com.br');
-define('SITE_NAME', 'Renov Departamento Pessoal');
+define('SITE_NAME', 'Boutique de Engenharia Financeira de Folha');
 define('LEADS_FILE', __DIR__ . '/../data/leads.csv');
 define('LOG_FILE', __DIR__ . '/../data/contato.log');
 define('N8N_WEBHOOK_URL', 'https://atendedp-n8n.y1xezl.easypanel.host/webhook/renovsite');
