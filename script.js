@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const whatsappBtn = document.getElementById('whatsapp-float');
   if (whatsappBtn) {
     whatsappBtn.addEventListener('click', () => {
-      window.open('https://wa.me/5562999999999?text=Olá! Gostaria de saber mais sobre os serviços da Renov.', '_blank');
+      window.open('https://wa.me/5562982152703?text=Olá! Quero renovar minha folha de pagamento com a Renov.', '_blank');
     });
   }
 
