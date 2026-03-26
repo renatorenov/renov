@@ -1,7 +1,7 @@
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <img src="<?= $rootPath ?>/assets/logo.svg" alt="Renov">
+        <img src="<?= $rootPath ?>/assets/FENIX FUNDO ESCURO.svg" alt="Renov" style="height:70px;width:70px;filter:none;">
         <p>Engenharia Financeira de Departamento Pessoal. Mais de 15 anos garantindo compliance, eficiência e redução de custos para operações com LG Lugar de Gen.te.</p>
       </div>
       <div class="footer-col">
