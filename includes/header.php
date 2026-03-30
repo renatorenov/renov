@@ -23,7 +23,7 @@ $rootPath = $isHome ? '.' : '..';
 <body>
   <nav class="nav" id="main-nav">
     <div class="nav-inner">
-      <a href="<?= $rootPath ?>/"><img src="<?= $rootPath ?>/assets/logo.svg" alt="Renov" class="nav-logo"></a>
+      <a href="<?= $rootPath ?>/"><img src="<?= $rootPath ?>/assets/FENIX FUNDO BRANCO.svg" alt="Renov" class="nav-logo"></a>
       <div class="nav-menu">
         <div class="nav-dropdown">
           <span class="nav-dropdown-toggle">Soluções <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>

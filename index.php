@@ -14,17 +14,7 @@
         </div>
       </div>
       <div class="hero-visual fade-5" style="position:relative;">
-        <div class="hero-card">
-          <div class="hero-card-header"><div class="hero-card-icon" style="color:var(--cyan-500);width:44px;height:44px;"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="40" height="32" rx="3"/><path d="M4 12h40"/><path d="M12 20v10M20 22v8M28 18v12M36 24v6"/><path d="M16 40h16M24 36v4"/></svg></div>
-            <div><div class="hero-card-title">Painel Renov</div><div class="hero-card-subtitle">ENGENHARIA FINANCEIRA EM TEMPO REAL</div></div>
-          </div>
-          <div class="hero-stats">
-            <div class="hero-stat"><div class="hero-stat-number">-30%</div><div class="hero-stat-label">Redução no TCO do DP</div></div>
-            <div class="hero-stat"><div class="hero-stat-number">100%</div><div class="hero-stat-label">Compliance eSocial</div></div>
-            <div class="hero-stat"><div class="hero-stat-number">99.8%</div><div class="hero-stat-label">Precisão na folha</div></div>
-            <div class="hero-stat"><div class="hero-stat-number">0</div><div class="hero-stat-label">Multas por atraso</div></div>
-          </div>
-        </div>
+        <img src="assets/hero-cfo.jpg" alt="CFO analisando Engenharia Financeira de Folha" class="hero-photo">
         <div class="floating-badge floating-badge-1"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:4px;"><path d="M1.5 6.5l3 3 6-6"/></svg>DIRF Mensal auditada</div>
         <div class="floating-badge floating-badge-2"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:4px;"><path d="M6 1L11 3.5v3.5c0 2.5-2 4-5 5-3-1-5-2.5-5-5V3.5L6 1z"/></svg>Compliance total</div>
       </div>
@@ -155,7 +145,7 @@
     <div class="contact-glow"></div>
     <div class="contact-inner reveal">
       <div class="contact-header">
-        <img src="assets/logo.svg" alt="Renov">
+        <img src="assets/FENIX FUNDO ESCURO.svg" alt="Renov" style="height:60px;width:60px;filter:none;margin:0 auto 1.2rem;display:block;">
         <div class="section-label">Solicitar Proposta</div>
         <h2 class="section-title" style="margin-bottom:.8rem;">Diagnóstico gratuito do seu DP</h2>
         <p>Preencha o formulário e um dos nossos especialistas entrará em contato para apresentar uma análise financeira personalizada do seu Departamento Pessoal.</p>
