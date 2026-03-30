@@ -7,7 +7,7 @@
       <div>
         <div class="hero-badge fade-1"><span class="hero-badge-dot"></span>Engenharia Financeira de Folha há +15 anos</div>
         <h1 class="section-title-lg fade-2"><span class="gradient-text">Engenharia Financeira</span><br>do seu Departamento Pessoal.</h1>
-        <p class="hero-desc fade-3">Somos especialistas em Boutique de Engenharia Financeira de Folha para empresas de médio e grande porte, clientes ativos e futuros clientes LG Lugar de Gen.te. Você foca na Estratégia do Negócio, nós garantimos o Compliance e a Eficiência Financeira do DP.</p>
+        <p class="hero-desc fade-3">Somos uma Boutique de Engenharia Financeira de Folha para empresas de médio e grande porte, clientes ativos e futuros clientes LG Lugar de Gen.te. Você foca na Estratégia do Negócio, nós garantimos o Compliance e a Eficiência Financeira do DP.</p>
         <div class="hero-actions fade-4">
           <a href="#contato" class="btn-primary">Solicitar Proposta →</a>
           <a href="#solucoes-grid" class="btn-secondary">Nossas Soluções</a>
@@ -36,7 +36,7 @@
     <div class="saving-banner-inner reveal">
       <div class="saving-number">-30%</div>
       <div class="saving-text">Redução média no Custo Total de Propriedade (TCO) do seu Departamento Pessoal</div>
-      <div class="saving-label">Engenharia Financeira de Folha aplicada a operações com LG Lugar de Gen.te</div>
+      <div class="saving-label">Especialista nas soluções LG Lugar de Gen.te</div>
     </div>
   </section>
 
@@ -132,7 +132,7 @@
     </div>
     <div class="why-cta-box">
       <h3>E se você pudesse resolver tudo isso<br>com uma única decisão?</h3>
-      <p>Contratar Engenharia Financeira de DP com quem realmente entende é mais do que delegar tarefas. É garantir que sua operação funcione com precisão, que sua empresa esteja protegida juridicamente e que o CFO tenha visibilidade total dos custos.</p>
+      <p>Contratar especialistas para operar financeiramente o seu Departamento Pessoal é mais do que simplesmente terceirizar. É garantir que sua operação funcione com precisão, que sua empresa esteja protegida juridicamente e que o CFO tenha visibilidade total dos custos.</p>
       <a href="#contato" class="btn-cyan" style="display:inline-block; text-decoration:none;">Solicitar diagnóstico gratuito →</a>
     </div>
   </div></section>
