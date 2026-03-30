@@ -18,12 +18,12 @@ $rootPath = $isHome ? '.' : '..';
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="<?= $rootPath ?>/style.css">
-  <link rel="icon" href="<?= $rootPath ?>/assets/FENIX FUNDO BRANCO.svg" type="image/svg+xml">
+  <link rel="icon" href="<?= $rootPath ?>/assets/capa-site-branco.jpg" type="image/jpeg">
 </head>
 <body>
   <nav class="nav" id="main-nav">
     <div class="nav-inner">
-      <a href="<?= $rootPath ?>/"><img src="<?= $rootPath ?>/assets/FENIX FUNDO BRANCO.svg" alt="Renov" class="nav-logo"></a>
+      <a href="<?= $rootPath ?>/"><img src="<?= $rootPath ?>/assets/capa-site-branco.jpg" alt="Renov" class="nav-logo"></a>
       <div class="nav-menu">
         <div class="nav-dropdown">
           <span class="nav-dropdown-toggle">Soluções <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>

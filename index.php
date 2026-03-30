@@ -145,7 +145,7 @@
     <div class="contact-glow"></div>
     <div class="contact-inner reveal">
       <div class="contact-header">
-        <img src="assets/FENIX FUNDO ESCURO.svg" alt="Renov" style="height:60px;width:60px;filter:none;margin:0 auto 1.2rem;display:block;">
+        <img src="assets/capa-site-azul.jpg" alt="Renov" style="max-width:200px;height:auto;margin:0 auto 1.2rem;display:block;filter:none;">
         <div class="section-label">Solicitar Proposta</div>
         <h2 class="section-title" style="margin-bottom:.8rem;">Diagnóstico gratuito do seu DP</h2>
         <p>Preencha o formulário e um dos nossos especialistas entrará em contato para apresentar uma análise financeira personalizada do seu Departamento Pessoal.</p>
