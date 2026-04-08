@@ -21,7 +21,7 @@
         <h4>Contato</h4>
         <a href="#">Goiânia, GO</a>
         <a href="mailto:contato@renovdp.com.br">contato@renovdp.com.br</a>
-        <a href="tel:+5562999999999">(62) 99999-9999</a>
+        <a href="tel:+5562999078182">(62) 99907-8182</a>
         <a href="#" target="_blank">LinkedIn</a>
         <a href="#" target="_blank">WhatsApp</a>
       </div>
